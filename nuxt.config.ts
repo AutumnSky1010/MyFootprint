@@ -14,5 +14,8 @@ export default defineNuxtConfig({
     display: 'swap',
     preload: true,
     download: true,
+  },
+  app: {
+    cdnURL: '/MyFootprint/',
   }
 })
