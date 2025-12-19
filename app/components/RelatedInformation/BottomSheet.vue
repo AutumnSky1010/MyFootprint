@@ -11,8 +11,8 @@ const opened = defineModel<boolean>('opened');
 
 const props = withDefaults(defineProps<PropsType>(), {
   minHeight: 120,
-  mediumHeight: () => window.innerHeight * 0.5,
-  maxHeight: () => window.innerHeight * 0.85,
+  mediumHeight: () => (typeof window !== 'undefined' ? window.innerHeight * 0.5 : 400),
+  maxHeight: () => (typeof window !== 'undefined' ? window.innerHeight * 0.85 : 600),
 });
 
 const height = ref(props.mediumHeight);
