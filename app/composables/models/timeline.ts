@@ -1,3 +1,5 @@
+import type { RelatedInformationRef } from "~/composables/models/relatedInformation"
+
 export interface Duration {
   start: Date
   end: Date
@@ -15,4 +17,5 @@ export interface TimelineEntry {
   description: string
   duration: Duration
   type: TimelineEntryType
+  relatedInformation: RelatedInformationRef
 }
