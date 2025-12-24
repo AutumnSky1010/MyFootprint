@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watch, type ModelRef } from 'vue';
+import { ref, watch } from 'vue';
 
 interface PropsType {
   minHeight?: number;
