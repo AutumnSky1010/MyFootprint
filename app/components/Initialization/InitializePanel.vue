@@ -43,11 +43,11 @@ const onFinish = () => {
         <div class="options">
           <label class="option-item">
             <input type="checkbox" v-model="getInterest.companies" />
-            <span>企業に関する情報を表示する</span>
+            <span>生活と関わりのある企業情報</span>
           </label>
           <label class="option-item">
             <input type="checkbox" v-model="getInterest.realEstates" />
-            <span>不動産に関する情報を表示する</span>
+            <span>不動産情報</span>
           </label>
         </div>
 
